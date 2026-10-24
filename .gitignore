@@ -1,0 +1,66 @@
+# ════════════════════════════════════════════════════════════════
+# RAG Chatbot — .gitignore
+# ════════════════════════════════════════════════════════════════
+
+# ── Environment & Secrets (NEVER commit these) ────────────────
+.env
+.env.local
+.env.production
+.env.optimized
+.env.colab
+*.env
+
+# ── Node.js ───────────────────────────────────────────────────
+backend/.env
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ── Uploaded Documents ────────────────────────────────────────
+backend/uploads/
+uploads/
+document/
+
+# ── Logs ──────────────────────────────────────────────────────
+logs/
+*.log
+backend/logs/
+
+# ── ChromaDB Data ─────────────────────────────────────────────
+chroma_data/
+.chroma/
+chromadb/
+backend/chroma/
+backend/.chroma/
+backend/chromadb/
+
+# ── Angular Build Output ──────────────────────────────────────
+frontend/dist/
+frontend/.angular/
+frontend/node_modules/
+
+# ── Old/Temp Files ────────────────────────────────────────────
+*_old.js
+gpu-check.js
+*.optimized
+ollama_colab.ipynb
+
+# ── OS Files ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / Editor ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Python (ChromaDB) ─────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
